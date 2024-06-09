@@ -64,6 +64,7 @@ module.exports.isSeller = (req, res, next) => {
 module.exports.isProductAuthor = async(req, res, next) => {
     
     // Getting a product id
+    //pid
     const { id } = req.params;
     const product = await Product.findById(id);
     
@@ -74,5 +75,6 @@ module.exports.isProductAuthor = async(req, res, next) => {
     next();
 
 }
+
 
 
