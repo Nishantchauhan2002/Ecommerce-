@@ -4,17 +4,17 @@ const User = require('../models/user');
 const passport = require('passport');
 const { registerForm, registerNewUser, loginForm, loginUser,logoutUser } = require('../controllers/auth');
 
-router.get('/fakeuser', async(req, res) => {
+// router.get('/fakeuser', async(req, res) => {
     
 
-    const user = {
-        email: 'sabeel@gmail.com',
-        username:'sabeel'
-    }
-    const newUser = await User.register(user, 'sabeel12');
+//     const user = {
+//         email: 'sabeel@gmail.com',
+//         username:'sabeel'
+//     }
+//     const newUser = await User.register(user, 'sabeel12');
 
-    res.send(newUser);
-});
+//     res.send(newUser);
+// });
 
 
 router.route('/register')
